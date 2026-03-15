@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/products/flanges/", "destination": "/products/flanges/index.html" },
+    { "source": "/products/elbows/", "destination": "/products/elbows/index.html" },
+    { "source": "/products/tees/", "destination": "/products/tees/index.html" },
+    { "source": "/products/pipes/", "destination": "/products/pipes/index.html" },
+    { "source": "/products/veldollets/", "destination": "/products/veldollets/index.html" },
+    { "source": "/products/transitions/", "destination": "/products/transitions/index.html" },
+    { "source": "/products/expansion-joints/", "destination": "/products/expansion-joints/index.html" },
+    { "source": "/products/heat-exchanger/", "destination": "/products/heat-exchanger/index.html" },
+    { "source": "/products/glass-lined-reactor/", "destination": "/products/glass-lined-reactor/index.html" }
+  ]
+}
