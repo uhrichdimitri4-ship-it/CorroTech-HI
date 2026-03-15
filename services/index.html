@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>हमारी सेवाएं | CorroTech</title>
+  <meta name="description" content="CorroTech इंजीनियरिंग सेवाएं: तेल रिफाइनरी, रासायनिक, फार्मास्यूटिकल, खाद्य और समुद्री उद्योगों के लिए डिजाइन, उपकरण चयन, आपूर्ति और स्थापना।">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Sans Devanagari', 'Inter', sans-serif; line-height: 1.6; color: #333; background: white; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 20px 0; }
+
+    /* HEADER */
+    .header { background: white; padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .header-content { display: flex; align-items: center; gap: 20px; }
+    .logo img { height: 140px; object-fit: contain; }
+    .breadcrumbs { margin-top: 10px; font-size: 16px; color: #666; }
+    .breadcrumbs a { color: #00a8ff; text-decoration: none; font-size: inherit; }
+
+    /* QR CODE */
+    .header-qr { display: flex; flex-direction: column; align-items: center; gap: 4px; flex-shrink: 0; width: 80px; min-width: 80px; margin-left: auto; }
+    .header-qr img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.12); display: block; }
+    .qr-label { font-size: 11px; color: #003366; font-weight: 600; white-space: nowrap; }
+
+    /* HERO VIDEO */
+    .hero-video { width: 100%; overflow: hidden; margin-bottom: 50px; }
+    .hero-video video { width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover; background: #000; }
+
+    /* MAIN */
+    .services-page { padding: 60px 0; }
+    .services-header { text-align: center; margin-bottom: 40px; }
+    .services-header h1 { font-size: 32px; color: #003366; margin-bottom: 15px; }
+
+    .services-content { max-width: 800px; margin: 0 auto; font-size: 17px; color: #444; }
+    .services-content p { margin-bottom: 18px; }
+    .services-content ul { padding-left: 24px; margin: 18px 0; }
+    .services-content li { margin-bottom: 10px; }
+
+    /* ABOUT */
+    .about { padding: 80px 0; background: #f9fbfd; border-top: 1px solid #eee; }
+    .about h2 { text-align: center; margin-bottom: 40px; font-size: 28px; color: #003366; }
+    .about-content { max-width: 800px; margin: 0 auto; font-size: 17px; line-height: 1.7; color: #222; }
+    .about-content p { margin-bottom: 20px; }
+    .about-content strong { color: #003366; }
+
+    /* FOOTER */
+    .footer { background: #0a0a0a; color: #ccc; padding: 40px 0 20px; border-top: 4px solid #8A2BE2; }
+    .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; }
+    .footer h3, .footer h4 { color: #fff; margin-bottom: 16px; font-size: 18px; }
+    .footer p, .footer a { color: #ccc; text-decoration: none; line-height: 1.6; font-size: 14px; }
+    .footer a:hover { color: #00a8ff; }
+    .footer-links { list-style: none; padding: 0; margin: 0; }
+    .footer-links li { margin-bottom: 8px; }
+    .footer-bottom { border-top: 1px solid #333; padding-top: 20px; text-align: center; font-size: 13px; color: #999; }
+    .footer-developer { margin-top: 20px; padding-top: 15px; border-top: 1px solid #333; text-align: center; font-size: 13px; color: #999; }
+    .footer-developer strong { color: #ccc; }
+    .developer-link { color: #2c5e3c !important; text-decoration: none; font-weight: 600; }
+    .developer-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- Language Switcher – Industrial Flag Style -->
+<div style="position: absolute; top: 16px; right: 20px; display: flex; gap: 14px; z-index: 1000; pointer-events: auto; font-family: sans-serif;">
+  
+  <!-- RU -->
+  <a href="https://pipefittings-hg.ru" title="Русский" style="display: block; width: 24px; height: 16px; border-radius: 2px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.1); opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+    <svg viewBox="0 0 3 2" style="width:100%; height:auto;">
+      <rect width="3" height="0.67" y="0" fill="#fff"/>
+      <rect width="3" height="0.67" y="0.67" fill="#0039a6"/>
+      <rect width="3" height="0.66" y="1.34" fill="#d52b1e"/>
+    </svg>
+  </a>
+
+  <!-- EN -->
+  <a href="https://pipefittings-hg.com" title="English" style="display: block; width: 24px; height: 16px; border-radius: 2px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.1); opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+    <svg viewBox="0 0 20 10" style="width:100%; height:auto;">
+      <rect width="20" height="10" fill="#012169"/>
+      <path d="M0,0 L20,10 M20,0 L0,10" stroke="#fff" stroke-width="2"/>
+      <path d="M0,0 L20,10 M20,0 L0,10" stroke="#C8102E" stroke-width="1"/>
+      <path d="M0,5 H20 M10,0 V10" stroke="#fff" stroke-width="1.5"/>
+      <path d="M0,5 H20 M10,0 V10" stroke="#C8102E" stroke-width="0.8"/>
+    </svg>
+  </a>
+
+  <!-- AR -->
+  <a href="https://ar.pipefittings-hg.com" title="العربية" style="display: block; width: 24px; height: 16px; border-radius: 2px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.1); opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+    <svg viewBox="0 0 30 20" style="width:100%; height:auto;">
+      <rect width="30" height="6.67" fill="#ce1126"/>
+      <rect width="30" height="6.67" y="6.67" fill="#fff"/>
+      <rect width="30" height="6.66" y="13.33" fill="#000"/>
+      <path d="M15,3 L18,10 L15,17 L10,13 H20 Z" fill="#fff"/>
+    </svg>
+  </a>
+</div>
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-content">
+    <div class="logo">
+      <img src="../assets/img/logo-en.png" alt="CorroTech">
+    </div>
+    <div class="breadcrumbs">
+      <a href="../index.html">होम</a> → 
+      हमारी सेवाएं
+    </div>
+    <div class="header-qr">
+      <a href="https://wa.me/qr/MWADBLNT4CJIE1" target="_blank" title="WhatsApp के माध्यम से संपर्क करें">
+        <img src="/assets/img/QR-code-WhatsApp1-en.jpg" alt="WhatsApp के माध्यम से संपर्क करें">
+      </a>
+      <div class="qr-label">WhatsApp</div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO VIDEO -->
+<div class="hero-video">
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline
+    poster="../assets/img/services-poster-en.jpg"
+    onmouseenter="this.pause()"
+    onmouseleave="this.play()">
+    <source src="../assets/videos/services-en.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- OUR SERVICES -->
+<section class="about" id="about">
+  <div class="container">
+    <h2>हमारी सेवाएं</h2>
+    <div class="about-content">
+      <p>
+        <strong>CorroTech औद्योगिक सुविधाओं के लिए व्यापक इंजीनियरिंग सेवाएं प्रदान करता है:</strong>
+      </p>
+      <p>
+        <strong>डिजाइन:</strong> ग्राहक विनिर्देशों के अनुरूप कस्टम पाइपिंग सिस्टम खंड।
+      </p>
+      <p>
+        <strong>सामग्री चयन:</strong> (टाइटेनियम, स्टेनलेस स्टील, डुप्लेक्स, Inconel) आक्रामक वातावरण के लिए — हाइड्रोजन सल्फाइड, क्लोराइड, एसिड।
+      </p>
+      <p>
+        <strong>समाधान अनुकूलन:</strong> अंतरराष्ट्रीय मानकों के लिए — <strong>ASME, EN, ISO, EJMA।</strong>
+      </p>
+      <p>
+        <strong>एंड-टू-एंड सप्लाई चेन प्रबंधन:</strong> ड्राइंग स्वीकृति से लेकर अंतिम हैंडओवर तक।
+      </p>
+      <p>
+        हम <strong>तेल रिफाइनिंग, रासायनिक, फार्मास्यूटिकल, खाद्य प्रसंस्करण और समुद्री उद्योगों</strong> में ग्राहकों की सेवा करते हैं।
+      </p>
+      <p>
+        संबद्ध इंजीनियरिंग, निर्माण और स्थापना कंपनियों के साथ साझेदारी के माध्यम से, हम <strong>पूर्णतः एकीकृत परियोजना निष्पादन</strong> प्रदान करते हैं: इंजीनियरिंग → आपूर्ति → स्थापना → कमीशन।
+      </p>
+      <p>
+        <strong>आपकी चुनौती — हमारा इंजीनियरिंग समाधान।</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>CorroTech ITK Ltd.</h3>
+        <p>प्रमाणित चीनी कारखानों से सीधे मुश्किल से मिलने वाले टाइटेनियम और स्टेनलेस स्टील पाइपिंग घटकों की आपूर्ति।</p>
+      </div>
+      <div class="footer-col">
+        <h4>संपर्क</h4>
+        <p><strong>ईमेल:</strong><br><a href="mailto:itk.ltd.com@gmail.com">itk.ltd.com@gmail.com</a></p>
+        <p><strong>WhatsApp:</strong><br>+852 5344 5428</p>
+      </div>
+      <div class="footer-col">
+        <h4>कानूनी जानकारी</h4>
+        <p>THE CAPITAL, 61–65 Chatham Road South,<br>Tsim Sha Tsui, Hong Kong</p>
+      </div>
+      <div class="footer-col">
+        <h4>नेविगेशन</h4>
+        <ul class="footer-links">
+          <li><a href="/">होम</a></li>
+          <li><a href="/about/">हमारे बारे में</a></li>
+          <li><a href="/#products">औद्योगिक उपकरण</a></li>
+          <li><a href="/services/">सेवाएं</a></li>
+          <li><a href="/contacts.html">संपर्क</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-developer">
+      <p>
+        <strong>वेबसाइट विकास:</strong>
+        <a href="mailto:iwit.company.l@gmail.com" class="developer-link">
+          <img src="/assets/img/3-1.png" alt="डेवलपर लोगो" width="30" style="vertical-align: middle; margin: 0 5px;">
+          IWIT
+        </a>
+      </p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 CorroTech ITK Ltd. सर्वाधिकार सुरक्षित।</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
